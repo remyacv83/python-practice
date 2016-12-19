@@ -1,13 +1,18 @@
 import random
 def guess_number():
-    min = raw_input("Enter the mininum number on the dice : ")
-    int_min = int(min)
-    max = raw_input("Enter the max number on the dice : ")
-    int_max = int(max)
-    while (int_min < int_max):
-        random_num = random.randint(int_min, int_max)
-        print random_num
-        int_min = int_min + 1
+    random_num = random.randint(1 , 10)
+    user_input = int(raw_input("Gues a number between 1 and 10"))
+    if( random_num == user_input):
+        print("You guessed it right")
+        break;
+     elif(random_num > user_input):
+         print("The number you entered is less than the correct number");
+         user_input = int(raw_input("Try again by entering a number greater than "+user_input))
+         break;
+     elif(random_num < user_input):
+        print("The number you entered is greater than the correct number");
+         user_input = int(raw_input("Try again by entering a number less than "+user_input))
+         break;
     print("done")
 
-roll_dice()
+rguess_number()

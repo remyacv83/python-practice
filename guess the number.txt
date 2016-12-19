@@ -12,3 +12,8 @@ If/Else statements
 Jumping off the first project, this project continues to build up the base knowledge and introduces user-inputted data at its very simplest. With user input, we start to get into a little bit of variability.
 
 steps:
+1) Run random function to generate a number between 1 and 10 and store it in a variable
+2) ask user to input their guess and store that in a variable
+3) compare 2 variables
+4) if not matched compare the numbers and say either 'the number you entered is greater than the correct number or less
+	if matched, print 'you guessed it right' and exit the program, 
